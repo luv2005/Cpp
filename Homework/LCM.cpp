@@ -1,12 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int n=25;
-    for (int i = 1; i <n; i++)
+    int num1, num2, lcm;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    lcm = (num1 > num2) ? num1 : num2;
+    while (true)
     {
-        if (n%i==0)
-        cout<<i<<endl;
+        if (lcm % num1 == 0 && lcm % num2 == 0)
+        {
+            cout << "LCM of " << num1 << " and " << num2 << " is " << lcm <<endl;
+            break;
+        }
+        ++lcm;
     }
     return 0;
 }
