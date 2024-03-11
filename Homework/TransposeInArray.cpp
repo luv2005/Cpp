@@ -18,14 +18,8 @@ int main(int argc, char const *argv[])
     cout << "The transpose of the matrix is" << endl;
     for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 3; j++)
-
-            b[i][j] = a[j][i];
-    }
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-            cout << b[i][j] << " ";
+        for(int j = 0; j < 3; j++)
+            cout << a[j][i] << " ";
         cout << endl;
     }
     return 0;
