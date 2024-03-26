@@ -2,7 +2,7 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    int a = 2;
+    int a = 32;
     int b = 5;
     int c = 10;
     if (a > b)
